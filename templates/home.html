@@ -2,19 +2,157 @@
 <html>
     <head>
         <title>M G N G & Co, Chartered Accountants</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <style>
+            #banner {
+                height: 285px;
+                width: 100%;
+                object-fit:cover;
+
+            }
+        </style>
 
     </head>
     <body>
-        <h1>M G N G & Co, Chartered Accountants</h1>
-        <img src="../static/banner 2 mgng.jpeg" height="310">
-        <h2>ABOUT US</h2>
-        <p>
-            ....short intro....
-        </p>
-        <h2>OUR SERVICES</h2>
-        <p>
-            ....services....
-        </p>
-        <button>contact us</button>
+
+        {% include 'nav.html' %}
+
+
+
+        <div class="container">
+            <h1 class="text-center mt-5 mb-3">M G N G & Co, Chartered Accountants</h1>
+            <img class="img-fluid" id ="banner" src="../static/banner 2 mgng.jpeg" height="310">
+            <h2 class="text-center mt-3  ">ABOUT US</h2>
+            <p  class="text-center"  class="lead">
+                M G N G & Company is a partnership firm registered with Institute of Chartered Accountants of India. The firm is owned by seasoned finance professionals Mr. Manish Gupta and Mrs. Neeru Gupta, both partners are having more than 20 years of experience in the field accounting, finance, corporate advisory and taxation (both direct and indirect) matters. Below is the brief profile of both the partners.<br><br><br>
+                <div >
+                <h3>1. Mr. Manish Gupta</h3>
+                Manish is a chartered accountant and commerce graduate from Delhi University. He possesses +20 years of work experience in finance domain. He has worked in many Indian and Multinational pioneered companies in IT and Telecom sector, to name few, he has worked in Infosys, Steria, British Telecom, Hewlett Packard. He has performed global roles in finance and handled ~$50m 10 ~$1.3b P&L size during his tenure. He is an expert in business planning, financial controls, commercial management, change management, operation finance, pricing, project management, accounting, management reporting, delivery cost reduction, and P&L management.<br><br><br>
+                <a href="mailto:manish_49@yahoo.com?subject=Enquiry" type="button" class="btn btn-outline-success">Email</a>
+                <a href="https://www.linkedin.com/in/manish-gupta-21881a8/"type="button" class="btn btn-outline-info">Linkedin</a>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                <h3>2. Mrs Neeru Gupta</h3>
+                Neeru is a chartered accountant and commerce graduate from Delhi University. She has an excellent academic record and a rank holder in Chartered Accountancy exam. She possesses +20 years of work experience in finance including regulatory compliances. She has worked for many reputed Indian companies in logistics, food processing, real estate, and packaging industries. She is an expert in statutory audits, internal audit, tax audit, company law compliances, tax assessment cases, financial capital restructuring, short term or long-term financial arrangement from banks, audit of cooperative societies.<br><br><br>
+                <a href="mailto:caneeru@gmail.com?subject=Buisness Enquiry"type="button" class="btn btn-outline-success">Email</a>
+                <a href=""type="button" class="btn btn-outline-info">Linkedin</a>
+                </div>
+                <br>
+                <br>
+                
+
+            </p>
+            <h2 class="text-center mb-5">OUR SERVICES</h2>
+            <p class="text-center">
+                <div >
+                    * Book Keeping / Back Office Accounting
+                </div>
+                <div >
+                    * Setting up Internal Control Procedure to Minimize Risk of Fraud
+                </div>
+                <div >
+                    * Financial Planning & Analysis (FP&A)
+                </div>
+                <div >
+                    * Monthly Forecast - P&L and Balance Sheet
+                </div>
+                <div >
+                    * Periodic Budget or Target Setting Procedure
+                </div>
+                <div >
+                    * Financial Modelling 
+                </div>
+                <div >
+                    * Tax Related Matters  
+                </div>
+                <div >
+                    * Company Law Matters (Under Indian Companies/LLP Acts)
+                </div>
+               
+            </p>
+            <br>
+            <br>
+            <h2 class="text-center">OUR SECURITY POLICY</h2>
+            <p >
+                When you outsource any of your function be it bookkeeping or statutory compliance task, it must be in the trusted hands. Our team is highly qualified and professional. We understand the importance of security of ours/client’s data and/ or property (including IPR). Our security policy ensure we are fully compliant (at every point in time) on all aspect of security including data protection. We ensure that our staff get regular training on all security matters (including data protection). We do random checks to ensure all our internal controls are functioning well. We follow zero tolerance policy on any security breaches.
+            </p>
+
+            <br>
+            <br>
+
+            <h2 class="text-center mb-3">FACILITIES</h2>
+            <p >
+                o CCTV monitoring stations in all our offices<br>
+                o 24/7 security guards at our building<br>
+                o Finger print scan access doors to prevent entry of un-authorized
+                personnel<br>
+                o A disaster recovery procedure in all our offices and your data is
+                backed up in secure servers.<br>
+                o No client’s data retention on our employee’s desktop/laptop as we
+                encourage our employees to use secured one drive / cloud environment for client data storage<br>
+            </p>
+            <br>
+            <br>
+
+            <h2 class="text-center mb-3">OUR NETWORK & SYSTEMS</h2>
+            <p >
+                o All our systems are access restricted by multiple levels of password protection<br>
+                o Online data transfer system uses 256-bit encryption technology similar to ones used by online banking industry<br>
+                o We use highly secured servers for our client’s data processing work which are sourced from global vendors with high reputation<br>
+                o No printers, USB based pen devices and DVD/CD drives allowedon the work floor<br>
+                o We are committed to fully comply on our client’s specific requirement<br>
+            </p>
+            <br>
+            <br>
+
+            <h2 class="text-center mb-3">OUR PEOPLE</h2>
+            <p >
+                o Our employees are highly qualified and trained from reputed institutions<br>
+                o We have a mix of Graduate/ Post Graduate or Professional degree holders like CA etc.<br>
+                o Our employees sign NDA (Non-disclosure agreement) before they start working on client data / environment<br>
+                o Our recruitment process ensures independent screening of our prospective employee before employment<br>
+                o We provide extensive data confidentiality training<br>
+                o Currently we have 5 employees but we have a seating capacity
+                that can accommodate 50 employees.
+            </p>
+            <br>
+            <br>
+
+            <h2 class="text-center mb-3">OUR CONFIDENTIALITY</h2>
+            <p >
+                We will serve you under full confidentiality agreement, we will ensure that your confidentiality to be protected. We will just work like an extension of your office. You or your nominated person will be the single point of contact for us. We will work from being behind the scenes as your trusted partner. Our agreements comprehensively cover this and you are ensured your 100% peace of mind.
+            </p>
+            <h2 class="text-center mb-3">OUR CURRENT CLIENTELE</h2>
+            <p >
+                o Our Indian client are operating in following industryor sectors ▪ Oil and Gas <br>
+                ▪ Packaging Industry <br>
+                ▪ Industrial raw material <br>
+                ▪ Food processing <br>
+                ▪ Financial services (NBFCs) <br>
+                o Our Australian clients are operating in following Industry or sectors <br>
+                • Hotel and Restaurants <br>
+                • Travel Agents <br>
+                • E-Commerce <br>
+                • Medical and other support services <br>
+            </p>
+            <h2 class="text-center mb-3">OUR CURRENT FEE MODEL </h2>
+            <p>
+                We are flexible in terms of fee structure. Our moto is to provide best class services at right cost of delivery to our client. We believe in maintaining long term relationship with our clients.
+                Currently we operate under following fee terms with our customers.
+                • Fixed Fee Model – We charge fixed fee per month to our client with agreed monthly deliverables. <br>
+                • Per Hour / Visit Fee Model – We charge our client basis per visit / hours. <br>
+                • Transaction Based Fee Model – We charge our client per transaction basis. <br>
+                This is more relevant in providing accounting or transaction-based services. <br>
+            </p> 
+            
+
+            {% include 'footer.html' %}
+        </div>
     </body>
 </html> 
