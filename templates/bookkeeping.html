@@ -18,7 +18,41 @@
     <body>
 
 
-        {% include 'navigationbar_1.html' %}
+        {% comment %} {% include 'navbar_v2.html' %} {% endcomment %}
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
+                <a href="#" class="navbar-brand" >menu</a>
+                <button 
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                
+                    <ul class="navbar-nav ">
+                        <li >
+                        <a class="nav-link active" aria-current="page" href="?../templates/home.html">Home</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#services">SERVICES</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#contacus">CONTACT US</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#clientele">CLIENTELE</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#feemodel">FEE MODEL</a>
+                        </li> 
+                    </ul>
+            
+            </div>
+        </div>
+        </nav>
+        <div style="height:56px"></div>
 
 
 
@@ -71,6 +105,8 @@
                 Note:
                 o We are currently managing back office accounting function of some reputed Indian and Australian client (reference can be provided during contract finalization stage)
                 o Basic concept of all accounting softwares are mostly similar in nature so there is no challenge incase your accounting software is not listed above.
+
+                {%include 'footer.html' %}
             </p>
         </div>
     </body>
