@@ -28,6 +28,7 @@
             <br>
             <br>
             <br>
+            <div class="border-bottom">
             <h2 class="text-center " id="about">ABOUT US</h2>
             <p  class="text-center"  class="lead">
                 M G N G & Company is a partnership firm registered with Institute of Chartered Accountants of India. The firm is owned by seasoned finance professionals Mr. Manish Gupta and Mrs. Neeru Gupta, both partners are having more than 20 years of experience in the field accounting, finance, corporate advisory and taxation (both direct and indirect) matters. Below is the brief profile of both the partners.<br><br><br>
@@ -50,50 +51,78 @@
                 </div>
                 <br>
                 <br>
-                
+            </div>
+            
 
             </p>
+            <div class="border-bottom">
             <h2 class="text-center mb-5" id="services">OUR SERVICES</h2>
             <p class="text-center">
-                <u>
+                
                     <li>
+                        <div>
                         Book Keeping / Back Office Accounting 
+                        {% include 'p_1.html' %}
+                        
+                        </div>
                     </li>
                     <li>
                          Setting up Internal Control Procedure to Minimize Risk of Fraud
+                         {% include 'p2.html' %}
+                         
 
                     </li>
                     <li>
                          Financial Planning & Analysis (FP&A)
+                         {% include 'p_3.html' %}
+                         
                     </li>
                     <li>
                          Monthly Forecast - P&L and Balance Sheet
+                         {% include 'p_4.html' %}
+                        
                     </li>
                     <li>
                          Periodic Budget or Target Setting Procedure
+                         {% include 'p_5.html' %}
+                        
                     </li>
                     <li>
-                        Financial Modelling   
+                        Financial Modelling
+                        {% include 'p_6.html' %}  
+                        
                     </li>
                     <li>
                          Tax Related Matters
+                         {% include 'p_8.html' %}  
+                         
                     </li>
                     <li>
+                        Financing Arrangement with Bankers
+                        {% include 'p_9.html' %} 
+                        
+                   </li>
+                    <li>
                          Company Law Matters (Under Indian Companies/LLP Acts)
+                         {% include 'p_8.html' %} 
+                         
                     </li>
-                </u>
-               
+                
+                <br>
+                <br>
+            </div>
             </p>
             <br>
             <br>
+            <div class="border-bottom">
             <h2 class="text-center">OUR SECURITY POLICY</h2>
             <p >
                 When you outsource any of your function be it bookkeeping or statutory compliance task, it must be in the trusted hands. Our team is highly qualified and professional. We understand the importance of security of ours/client’s data and/ or property (including IPR). Our security policy ensure we are fully compliant (at every point in time) on all aspect of security including data protection. We ensure that our staff get regular training on all security matters (including data protection). We do random checks to ensure all our internal controls are functioning well. We follow zero tolerance policy on any security breaches.
             </p>
-
+        </div>
             <br>
             <br>
-
+            <div class="border-bottom">
             <h2 class="text-center mb-3">FACILITIES</h2>
             <p >
                 o CCTV monitoring stations in all our offices<br>
@@ -107,7 +136,8 @@
             </p>
             <br>
             <br>
-
+        </div>
+        <div class="border-bottom">
             <h2 class="text-center mb-3">OUR NETWORK & SYSTEMS</h2>
             <p >
                 o All our systems are access restricted by multiple levels of password protection<br>
@@ -118,6 +148,8 @@
             </p>
             <br>
             <br>
+        </div>
+        <div class="border-bottom">
 
             <h2 class="text-center mb-3">OUR PEOPLE</h2>
             <p >
@@ -131,11 +163,17 @@
             </p>
             <br>
             <br>
+        </div>
+
+        <div class="border-bottom">
 
             <h2 class="text-center mb-3">OUR CONFIDENTIALITY</h2>
             <p >
                 We will serve you under full confidentiality agreement, we will ensure that your confidentiality to be protected. We will just work like an extension of your office. You or your nominated person will be the single point of contact for us. We will work from being behind the scenes as your trusted partner. Our agreements comprehensively cover this and you are ensured your 100% peace of mind.
             </p>
+        </div>
+        <div class="border-bottom">
+
             <h2 class="text-center mb-3" id="clientele">OUR CURRENT CLIENTELE</h2>
             <p >
                 o Our Indian client are operating in following industryor sectors ▪ Oil and Gas <br>
@@ -149,6 +187,10 @@
                 • E-Commerce <br>
                 • Medical and other support services <br>
             </p>
+            <br>
+            <br>
+        </div>
+        <div class="border-bottom">
             <h2 class="text-center mb-3" id="feemodel">OUR CURRENT FEE MODEL </h2>
             <p>
                 We are flexible in terms of fee structure. Our moto is to provide best class services at right cost of delivery to our client. We believe in maintaining long term relationship with our clients.
@@ -158,9 +200,10 @@
                 • Transaction Based Fee Model – We charge our client per transaction basis. <br>
                 This is more relevant in providing accounting or transaction-based services. <br>
             </p> 
-            
+        </div>
 
             {% include 'footer.html' %}
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html> 
